@@ -8,13 +8,13 @@ Planning updated on 12 October 2026. Stable item numbers match the development o
 2. **36 — Fresh Windows PC acceptance.** Test the public ZIP, setup, desktop restart, libraries, import/reimport, KiCad placement, simulation and uninstall with data retention. Previous private-package acceptance does not cover the public package.
 3. **37 — Component import acceptance.** Check previews, duplicate handling and SPICE mapping with representative packages. Fix confirmed blockers before adding import features.
 4. **46 — Basic filter correctness.** Check boundary values, SI units, unknown values and helpful tooltips.
-5. **41 + 51 — Illustrated user guide and project website together.** One maintained set of English instructions and Release-DB screenshots, reused by the project page and guide. Prepare a local preview before agreeing publication with the user. See [shared work-package scope](BETA_FEEDBACK.md#shared-documentation-and-website--items-41-and-51).
+5. **41 + 51 — Completed: website and illustrated quick-start guide.** Published on GitHub Pages: https://haraldstraub.github.io/kicad-parts-manager-public/. Maintenance and unpublishing: [website instructions](../website/README.md).
 6. **27 — Undo local data changes.** Begin with individual parameter edits and revision checks; import rollback follows separately.
 7. **43 — Safe update guidance.** Distinguish program updates from library-data updates, link to releases and protect user data. No automatic database replacement.
 
 ## B — Discoverability and usability
 
-8. **51 — Project website:** now planned jointly with item 41 in priority A above; retain both stable item numbers and avoid duplicate documentation.
+8. **51 — Completed jointly with 41:** published website and shared guide.
 9. **50 / 25 — Search suggestions and aliases.** Local database-backed suggestions, existing unit-aware search and keyboard navigation.
 10. **12 / 38 / 40 — Portability, release follow-up and version notes.** Continue technical checks and clear release documentation. Linux support and conflict-aware data merging need separate scopes.
 11. **30 / 47 / 34 / 14 — Targeted usability, category and library-workflow improvements.** Address observed problems rather than redesigning the whole interface.
