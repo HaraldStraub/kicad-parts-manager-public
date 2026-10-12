@@ -1,0 +1,15 @@
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
+backups/
+data/
+*.sqlite
+*.sqlite-*
+*.db
+db/library-catalog.json
+db/imported-libraries.json
+.env
+.env.*
