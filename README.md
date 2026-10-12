@@ -4,6 +4,8 @@ Find, select and organise electronic parts for KiCad using electrical parameters
 
 ![KiCad Parts Manager – homepage in dark mode](docs/screenshots/startpage-dark.jpg)
 
+**[Website and quick-start guide](https://haraldstraub.github.io/kicad-parts-manager-public/)**
+
 ## Windows: download and start
 
 **[Download the complete Windows package with Release-DB](https://github.com/HaraldStraub/kicad-parts-manager-public/releases/download/v0.1.0-beta.1/KiCad-Parts-Manager-0.1.0-beta.1-Windows.zip)** · [All downloads and SHA256 checksums](https://github.com/HaraldStraub/kicad-parts-manager-public/releases/tag/v0.1.0-beta.1)
