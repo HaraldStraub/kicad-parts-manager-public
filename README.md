@@ -4,6 +4,8 @@ Elektronische Bauteile für KiCad schneller finden, auswählen und pflegen: Such
 
 Find, select and organise electronic parts for KiCad using electrical parameters, categories and symbol/footprint previews. Import component files and assign local SPICE models with explicit pin mapping. No runtime AI, cloud account or central database is required.
 
+![KiCad Parts Manager – Startseite im dunklen Design](docs/screenshots/startpage-dark.jpg)
+
 ## Windows: herunterladen und starten / Download and start
 
 **[Vollständiges Windows-Paket mit Release-DB herunterladen](https://github.com/HaraldStraub/kicad-parts-manager-public/releases/download/v0.1.0-beta.1/KiCad-Parts-Manager-0.1.0-beta.1-Windows.zip)** · [Alle Downloads und SHA256](https://github.com/HaraldStraub/kicad-parts-manager-public/releases/tag/v0.1.0-beta.1)
@@ -41,3 +43,5 @@ Program code: **GPL-3.0-only**, [LICENSE](LICENSE). Libraries retain separate ri
 Baseline: 408 Python and 142 JavaScript tests passed (three optional skips); isolated setup/import/reimport/data persistence/shortcut/uninstall preview tested. Full test-candidate startup: 15.22 s first cache, 2.92 s cached; timing depends on hardware. This was isolated testing on the development computer, not acceptance on a second clean Windows PC. Online CI and release checks are visible on GitHub.
 
 Maintainer: [Harald Straub](https://github.com/HaraldStraub). Matching sources are in this repository and the source ZIP accompanying the release.
+
+Geplante Ergänzungen / Planned improvements: [Backlog](docs/BACKLOG.md).
