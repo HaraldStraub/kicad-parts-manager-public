@@ -1,0 +1,2 @@
+* Self-authored CC0-1.0 illustrative reference
+.model REFNPN NPN (IS=1e-14 BF=100 VAF=100)

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-12",
+  "repository_name": "HaraldStraub/kicad-parts-manager-public",
+  "platform": "Windows x64 beta",
+  "validation_baseline": {
+    "python": "3.13",
+    "kicad": "10.0.6"
+  },
+  "minimum_python": "3.11",
+  "other_platforms": "not accepted; Linux experimental",
+  "code_license": "GPL-3.0-only",
+  "private_data_included": false,
+  "publication_authorised": true,
+  "version_freeze": "Windows Beta 1",
+  "release_tag": "v0.1.0-beta.1"
+}

@@ -1,0 +1,31 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {JSDOM} from 'jsdom';
+const read=name=>readFile(new URL('../src/kicad_parts_manager/web/'+name,import.meta.url),'utf8');
+const uri=s=>'data:text/javascript;base64,'+Buffer.from(s).toString('base64');
+const translations=uri(await read('ui-texts.js')),i18n=uri((await read('i18n.js')).replace('./ui-texts.js',translations));
+const {attachValueInfo,hideValueInfo}=await import(uri((await read('context-help.js')).replace('./i18n.js',i18n)));
+const definition=['vds_max','VDS','V',1,{conditions:[{key:'test_temperature',label:'Temperature',unit:'°C'}]}];
+const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+test('whole value cell supports keyboard information with one fact per row and safe source text',t=>{
+ const dom=new JSDOM('<html lang="en"><body><table><tr><td>60</td></tr></table></body></html>',{pretendToBeVisual:true}),d=dom.window.document,previous=globalThis.document;globalThis.document=d;
+ t.after(()=>{hideValueInfo(d);dom.window.close();globalThis.document=previous;});
+ const cell=d.querySelector('td'),evidence={source_type:'description',source:'<img src=x> original text',kind:'maximum',conditions_data:{test_temperature:25}},before=JSON.stringify(evidence);
+ attachValueInfo(cell,evidence,definition,'60');cell.focus();const panel=d.getElementById('value-information');
+ assert.equal(panel.hidden,false);assert.equal(cell.getAttribute('aria-describedby'),panel.id);assert.match(panel.querySelector('h3').textContent,/60 V$/);
+ assert.deepEqual([...panel.querySelectorAll('dt')].map(n=>n.textContent),['Meaning','Origin','Source','Value type','Test temperature','Datasheet check']);assert.equal(panel.querySelectorAll('dd').length,6);
+ assert.ok(panel.querySelector('dd').textContent.length>30);
+ assert.match(panel.textContent,/25 °C/);assert.equal(panel.querySelector('img'),null);assert.match(panel.textContent,/<img src=x>/);assert.equal(JSON.stringify(evidence),before);
+ assert.equal(cell.title,'');assert.equal(panel.querySelectorAll('button').length,0);
+ cell.dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));assert.equal(panel.hidden,true);assert.equal(cell.hasAttribute('aria-describedby'),false);assert.equal(d.activeElement,cell);
+});
+test('hover has a delay and information stays open while moving from cell into panel',async t=>{
+ const dom=new JSDOM('<html lang="en"><table><tr><td>60</td></tr></table></html>'),d=dom.window.document,previous=globalThis.document;globalThis.document=d;
+ t.after(()=>{hideValueInfo(d);dom.window.close();globalThis.document=previous;});
+ const cell=d.querySelector('td');attachValueInfo(cell,{source_type:'catalog'},definition,'60');const panel=d.getElementById('value-information');
+ cell.dispatchEvent(new dom.window.MouseEvent('mouseenter'));assert.equal(panel.hidden,true);await pause(340);assert.equal(panel.hidden,false);
+ cell.dispatchEvent(new dom.window.MouseEvent('mouseleave'));panel.dispatchEvent(new dom.window.MouseEvent('mouseenter'));await pause(250);assert.equal(panel.hidden,false);
+ panel.dispatchEvent(new dom.window.MouseEvent('mouseleave'));await pause(250);assert.equal(panel.hidden,true);
+ cell.focus();assert.equal(panel.hidden,false);d.dispatchEvent(new dom.window.Event('scroll'));assert.equal(panel.hidden,true);
+});

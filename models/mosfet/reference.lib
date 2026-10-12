@@ -1,0 +1,2 @@
+* Self-authored CC0-1.0 illustrative reference
+.model REFNMOS NMOS (LEVEL=1 VTO=2 KP=0.1 LAMBDA=0.01)

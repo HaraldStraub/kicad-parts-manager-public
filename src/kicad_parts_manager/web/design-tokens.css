@@ -1,0 +1,35 @@
+/* Shared visual tokens for landing page, catalog and every dialog. */
+:root{color-scheme:dark;--bg:#202326;--surface:#2b2f33;--panel:#292d31;--field:#2b2f33;--overlay:#292d31ed;--line:#535d66;--row-line:#ffffff12;--text:#f0f2f4;--muted:#bbc3cb;--accent:#69b7e8;--teal:#62c5b4;--selected:#294c60;--hover:#333b42;--button:#3c9fda;--button-text:#fff;--warning:#e9b44c;--warning-bg:#493819;--warning-text:#ffe2a0;--error:#ef8b82;--error-bg:#492626;--error-text:#ffd0cc;--radius:5px;--dialog-radius:8px;font-family:"Segoe UI",Arial,sans-serif}
+/* Light palette: white workspaces, neutral app background, blue-gray structure.
+   Keep light-only colors here; geometry and dark tokens remain unchanged. */
+body.light{
+  color-scheme:light;
+  --bg-app:#f1f4f6;--bg-panel:#fff;--bg-secondary:#e8eef2;--bg-header:#dde6ec;
+  --text-primary:#17242d;--text-secondary:#465b68;--text-muted:#687a85;--text-disabled:#98a5ad;
+  --border-default:#9eafba;--border-subtle:#c3ced5;
+  --accent:#0073a8;--accent-hover:#005f8c;--accent-soft:#d7ecf6;--on-accent:#fff;
+  --table-bg:#fff;--table-header-bg:#dde6ec;--table-row-alt:#f5f8fa;
+  --table-row-hover:#e6f2f8;--table-row-selected:#c9e6f4;--table-border:#bcc9d1;--table-text:#182832;
+  --input-bg:#fff;--input-border:#96a9b5;--input-text:#17242d;--input-focus:#0073a8;
+  --button-bg:#fff;--button-border:#96a9b5;--button-text:#203440;--button-hover:#f2f8fb;
+  --nav-text:#273944;--nav-selected:#d6ecf7;--nav-selected-text:#123247;
+  --resource-bg:#f5fbfe;--resource-active:#d8edf7;--resource-border:#0070a8;--resource-text:#006a9e;
+  --landing-image-overlay:#f5f8fa99;--landing-hero:#ffffffe0;--landing-small-text:#344b5a;
+  --bg:var(--bg-app);--surface:var(--bg-panel);--panel:var(--bg-panel);--field:var(--input-bg);
+  --overlay:#fffffff2;--line:var(--border-default);--row-line:var(--table-border);
+  --text:var(--text-primary);--muted:var(--text-secondary);--teal:#086a61;
+  --selected:var(--table-row-selected);--hover:var(--table-row-hover);--button:var(--accent);
+  --warning:#9c6a12;--warning-bg:#fff1cf;--warning-text:#684800;
+  --error:#b63a30;--error-bg:#ffe5e2;--error-text:#8f251e;
+}
+
+/* A compact, optional support action shared by both page headers. */
+.donate-button{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;padding:6px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);color:var(--accent);text-decoration:none;flex-shrink:0}.donate-button svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.donate-button[href]:hover{background:var(--hover);border-color:var(--accent);color:var(--accent)}.donate-button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* Shared progress track: unknown duration animates; measured work fills the track. */
+.progress-track{height:4px;margin-top:7px;background:var(--field);overflow:hidden;border-radius:3px}.progress-track>span{display:block;width:35%;height:100%;background:var(--teal);animation:work-running 1.3s ease-in-out infinite}.progress-track.determinate>span{animation:none;transform:none;transition:width .1s linear}@keyframes work-running{from{transform:translateX(-110%)}to{transform:translateX(390%)}}@media(prefers-reduced-motion:reduce){.progress-track>span{animation:none;width:100%;opacity:.7}.progress-track.determinate>span{transition:none}}
+
+/* Optional support, consistent with the existing dialog design in both themes. */
+.support-dialog{width:min(560px,calc(100vw - 32px));max-height:calc(100svh - 48px);overflow:auto;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:var(--dialog-radius);padding:24px;font-size:16px;line-height:1.6}
+.support-dialog h2{font-size:23px;line-height:1.3;margin:0 40px 16px 0;padding:0;border:0}.support-dialog p{margin:14px 0}.support-dialog .dialog-close{position:absolute;right:12px;top:12px;width:34px;height:34px;padding:0;font-size:26px;line-height:1;border:1px solid var(--accent);background:var(--field);color:var(--text)}
+.support-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:20px}.support-paypal{display:inline-block;padding:7px 12px;border:1px solid var(--accent);border-radius:var(--radius);background:var(--selected);color:var(--text);text-decoration:none}.support-paypal:hover{background:var(--hover)}.support-dialog .hint{font-size:13px;color:var(--muted)}

@@ -1,0 +1,825 @@
+{
+  "schema_version": 1,
+  "scope": {
+    "date": "2026-10-12",
+    "repository_name": "HaraldStraub/kicad-parts-manager-public",
+    "platform": "Windows x64 beta",
+    "validation_baseline": {
+      "python": "3.13",
+      "kicad": "10.0.6"
+    },
+    "minimum_python": "3.11",
+    "other_platforms": "not accepted; Linux experimental",
+    "code_license": "GPL-3.0-only",
+    "private_data_included": false,
+    "publication_authorised": true,
+    "version_freeze": "Windows Beta 1",
+    "release_tag": "v0.1.0-beta.1"
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "a3c2cc5c121d53f7011e7b12bf37fc3e51cd85cf0b5f858014d2f20e8396fda4"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "sha256": "109598e76550d0c1435f23eec8f12248364cf6ca946b6f2e32c6aa01438d7c8e"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "d6d81427cbfd6fb2c87462698c241fd6c31e47025c137498e50b8a01b228cb95"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "sha256": "feef5fe35dec48bd8106c2a2eba917be971782136e4295edda7309b6216cdbaf"
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "sha256": "65889fe924d13cb18ff27c05df62a15cccdc230dd01eeb920e4fe40955764a3e"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "449f402b4fc4334463a9ac3ecaf2113d05d3b5cb0ab384431ca9101a9f400eb7"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "77c4af7114ab819fa6b88234a756d87273f60bdd032f6bf5ad8616f757055db8"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "7c6d66c4af87eca76979615c4287a87fe4b13b1d8d4dec99a805d415f42e035d"
+    },
+    {
+      "path": "DISCLAIMER.md",
+      "sha256": "dfbf3bf29de4d67214a29a51ff110f4abca9843f84af3d0779f133af3122d215"
+    },
+    {
+      "path": "Deinstallieren.cmd",
+      "sha256": "7730e01f3e78a03bf93de29b73a3c6e48a86f04108ac90b8f5f4056a8122f06a"
+    },
+    {
+      "path": "Desktop-Verknuepfung-erstellen.cmd",
+      "sha256": "15e6944a53341491529816c8b0a11925a633761ab948f3bf3033a1f02f8ce347"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "README.md",
+      "sha256": "49d9a84b56b8018355cf67158f6506355b2f8883ace4834b3733010fb1eb1b73"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "sha256": "ca509c8046e18cf146cff965c1b56d6152352460bb9c418a350bd5c0db626b02"
+    },
+    {
+      "path": "RELEASE_SCOPE.json",
+      "sha256": "2078d587cf1d7cfe006fa9a199d245c61a98507240520c71a332d17479938d02"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "6b849c5c2fcfb41cc3fe3eddea89d3951fa557eaa6051ed050f9e8524b7080fa"
+    },
+    {
+      "path": "Start-KiCad-Parts-Manager-Dev.cmd",
+      "sha256": "d04ce60d9190d8f3ae2a9c288398bdd9e81128f8516ace16fa5c7680cb6ed40c"
+    },
+    {
+      "path": "Start-KiCad-Parts-Manager.cmd",
+      "sha256": "eee82b4e615af34a9615a05ae956d71796f1ae380bce9deb0a3c7e985bee5313"
+    },
+    {
+      "path": "Start-KiCad-Parts-Manager.sh",
+      "sha256": "e745970174227e2519603c273cf18c3593c51119e8e6e3be6b8517cbe2288b93"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "ee10b5ac8ccfc0fb88b156eb6d5107ed50de080b4b078ee941db9bc7bf892d60"
+    },
+    {
+      "path": "alembic.ini",
+      "sha256": "b3c3a0290d74f60127c183d568d322901eb0eda1756005fd0603810de5fd3fec"
+    },
+    {
+      "path": "db/migrations/env.py",
+      "sha256": "10dfd3a365d09883cb9ce358ad558ab669e76bb775b2ae42a1853b7ad6ce90f7"
+    },
+    {
+      "path": "db/migrations/schema_001.py",
+      "sha256": "bbaf87207c2d43d6180bfd1fd921b6daa35989e09f0d6b90b57c577db91115e0"
+    },
+    {
+      "path": "db/migrations/versions/001_initial.py",
+      "sha256": "68daf78c852518d3c066595b02e2c5fe31a6fd87bf6b9cc6b6536e9f7cedf7d9"
+    },
+    {
+      "path": "db/migrations/versions/002_odbc_aliases.py",
+      "sha256": "7451fc367aedda20dc79c266f9ea83ae70f53a97a2596da1a785d3fbc10652cb"
+    },
+    {
+      "path": "db/migrations/views_001.sql",
+      "sha256": "693aa4be6ff0a6fbd94824b5692472d167ba85751442c52c9f1efd6b842980ca"
+    },
+    {
+      "path": "db/migrations/views_002.sql",
+      "sha256": "2024392aadfc816586ac4d46ac55c415554db374fa3696fab0e61ae506a27e7a"
+    },
+    {
+      "path": "docs/FEEDBACK.md",
+      "sha256": "43e0ba26be714406b754eb6bd42ed020f5ed985dcc3e89a4cc15d366a2ec9879"
+    },
+    {
+      "path": "docs/INSTALLATION.md",
+      "sha256": "462093a5892e7ed92bdada7c854d1e147551c610996c818b9d8542efb4ca9a72"
+    },
+    {
+      "path": "docs/WINDOWS_ACCEPTANCE.md",
+      "sha256": "d061148f784e9377d3e885afa5ca4b79479ef5a7dd7a4be359489434ddb8334a"
+    },
+    {
+      "path": "docs/public/CC0-1.0.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "docs/public/DISCLAIMER.md",
+      "sha256": "dfbf3bf29de4d67214a29a51ff110f4abca9843f84af3d0779f133af3122d215"
+    },
+    {
+      "path": "docs/public/README.md",
+      "sha256": "986271b0b2e2f4fb6dcedb29abc3029acfb77a4172fbaa2fafb661546298b62f"
+    },
+    {
+      "path": "docs/public/THIRD_PARTY_NOTICES.md",
+      "sha256": "ee10b5ac8ccfc0fb88b156eb6d5107ed50de080b4b078ee941db9bc7bf892d60"
+    },
+    {
+      "path": "kicad/kicad-parts-manager.kicad_dbl",
+      "sha256": "79d594f46f9889f4c4ad5e4ddd887e99bb9b7614dab9d24c5dd7618970411d55"
+    },
+    {
+      "path": "licenses/CC0-1.0.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "models/bjt/reference.lib",
+      "sha256": "7a49e0e5b6017c92ce352c4920c56500c8e2fce1941cbfe721dc4b029ede2e7d"
+    },
+    {
+      "path": "models/diode/reference.lib",
+      "sha256": "9ae5cce33e42059d59595cdbef64772b3d2fb58826ebcb45c56f0fa62bbecc50"
+    },
+    {
+      "path": "models/diode/schottky.lib",
+      "sha256": "5786e8dc2f454da855adf1eed4c87864b2063075dd0281ca3a4ac8d94c649e0b"
+    },
+    {
+      "path": "models/diode/zener.lib",
+      "sha256": "6f4503771c6e1eda2b20f457bc1980319247654aeae18b314bbe0696173f9f19"
+    },
+    {
+      "path": "models/mosfet/reference.lib",
+      "sha256": "76063192d60c5b1f8b3b008df71376ca12ba7d1d541680af0aafde89fa45c0bc"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "3a53dc89b04747743d649d516b04272fee0bf06225f93ff6760700dbc984d92e"
+    },
+    {
+      "path": "package.json",
+      "sha256": "18a0674a5b3e25ae6930a0c2ed30b4bb25c7e7f817465338da16d49a2880e035"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "389f547d6ac54f7958e28c720338e03b59007064e466af64363b440537cc74c3"
+    },
+    {
+      "path": "requirements-runtime.txt",
+      "sha256": "ab9e299257a88fc55eaebaa02e1fda34fc49515ba46a8601c251bd6b9e1761f6"
+    },
+    {
+      "path": "scripts/enrich_diode_descriptions.py",
+      "sha256": "a66946d3d217b8e58da54361ff5b0dac3417edfbd561631f7ff028f0056d2c95"
+    },
+    {
+      "path": "scripts/enrich_parameters.py",
+      "sha256": "18d7e31e0b7c28632d7f8c9c392a7bd1cc82d002661bab355b9f08abcb9adee7"
+    },
+    {
+      "path": "src/kicad_parts_manager/__init__.py",
+      "sha256": "ef839494fbbbac6b8ae2ec874fc3bbd997ea6d0501b9c88ae93b5ec6792459ba"
+    },
+    {
+      "path": "src/kicad_parts_manager/about.py",
+      "sha256": "77843845b82cdf07c22fbde854dad151c0047ea103769b366dec78e856bc128d"
+    },
+    {
+      "path": "src/kicad_parts_manager/api_errors.py",
+      "sha256": "034d11766c6bcc4847f80f1a1132d6230dde4a4ef28d9046eeb7bbd1af6f4ca9"
+    },
+    {
+      "path": "src/kicad_parts_manager/browser.py",
+      "sha256": "51d8d2672ff17a081d7f71ef575e34abe03bf6daf0e16bbf3edf7554a5364c0d"
+    },
+    {
+      "path": "src/kicad_parts_manager/catalog.py",
+      "sha256": "1fa2d6c47ab1b915d9db5202d8e77688876c2899580cb1ed52493e7651386a4f"
+    },
+    {
+      "path": "src/kicad_parts_manager/catalog_transport.py",
+      "sha256": "8606a9b642d13ebd68c1cd704be226758eb349d856b5e602e227a03045fea235"
+    },
+    {
+      "path": "src/kicad_parts_manager/category_overrides.py",
+      "sha256": "708b5872c1abe55e8336c54162c8439f3da3680898e17eaf12881f23ce6bde6d"
+    },
+    {
+      "path": "src/kicad_parts_manager/cli.py",
+      "sha256": "c7d986e609432b3ca3428897cf3038ea9c922a778a0362c3e8b4b96e2e14d2f0"
+    },
+    {
+      "path": "src/kicad_parts_manager/common_description.py",
+      "sha256": "76a6823e3d70b1a388b497ba5f7eb941c9277d0a9bc2890f7825ab867e0062a1"
+    },
+    {
+      "path": "src/kicad_parts_manager/compatibility.py",
+      "sha256": "8e4b34fb38781324df9cc764814c76e8204cf8ec1bcf8cd4058e73fe12937d42"
+    },
+    {
+      "path": "src/kicad_parts_manager/component_import.py",
+      "sha256": "f21d187013128c35bbbcb5b8dac3790fc780a60fd11438d7157b608479c25ee5"
+    },
+    {
+      "path": "src/kicad_parts_manager/connector_description.py",
+      "sha256": "9ae67e663dac1d8fbe8913fae14c3c9baa41f6695d4ea5c245d5181ff6ec5681"
+    },
+    {
+      "path": "src/kicad_parts_manager/contact_description.py",
+      "sha256": "39607f3bb025a9fd8f7105b6855bb5967e518275788349af002e44ac268086f5"
+    },
+    {
+      "path": "src/kicad_parts_manager/data/manufacturer-parameters.json",
+      "sha256": "c8639e8f6aae58ae14cfbbaa1e3a1e731e1e4f5b964758779ac2c0d42a5b0e1e"
+    },
+    {
+      "path": "src/kicad_parts_manager/database/__init__.py",
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "src/kicad_parts_manager/database/models.py",
+      "sha256": "17e09cf1a12f3c0297c3bac1c511a3ded35b5cd74823847cb5ec2bba80595488"
+    },
+    {
+      "path": "src/kicad_parts_manager/database/session.py",
+      "sha256": "07e3e9f03b6f09744e06a8fea27bc31a992cae05e3f3fd4434de6ec253013a02"
+    },
+    {
+      "path": "src/kicad_parts_manager/diode_check.py",
+      "sha256": "51394b5202308c5ba6f34088490d0a05fef8781bac6eedd4ac7d02221cc9c5fc"
+    },
+    {
+      "path": "src/kicad_parts_manager/diode_description.py",
+      "sha256": "90af67ee9ed8efde3cfe9b9e4c1bfb2f825c1f130c779bed2c85e1e4a2311aec"
+    },
+    {
+      "path": "src/kicad_parts_manager/domain/__init__.py",
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "src/kicad_parts_manager/domain/enums.py",
+      "sha256": "09bb44f0c352a7a80f77a5d07a5f6988f6523013e7f62f519b3d3bcfff7e9ab4"
+    },
+    {
+      "path": "src/kicad_parts_manager/first_run.py",
+      "sha256": "067a2d776d620417d07e814c91b54af001b400b672b35463e8fbd721c12119a2"
+    },
+    {
+      "path": "src/kicad_parts_manager/import_matching.py",
+      "sha256": "0e7317e28d01865788485de71c7b92e6954127bcbe8bad53a6a1cbdb03b871b4"
+    },
+    {
+      "path": "src/kicad_parts_manager/import_sim.py",
+      "sha256": "680dfa698d1be88ef291af01c91ef0f0077688f2e4690de3f368b901592323e1"
+    },
+    {
+      "path": "src/kicad_parts_manager/importers/__init__.py",
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "src/kicad_parts_manager/importers/pilot.py",
+      "sha256": "2c85f3acc165ed8a960ea424f950c3509232491063ac300a238762fae06e4e26"
+    },
+    {
+      "path": "src/kicad_parts_manager/importers/seed.py",
+      "sha256": "32c1e7ba4295d9c2a7c61aa055ceffb749f5ed5c5dcc24ba605aca66d1a042b4"
+    },
+    {
+      "path": "src/kicad_parts_manager/inventory_disk_cache.py",
+      "sha256": "f0f23766112c1dbe603589be18bfcafb68bef4a318cb9a0127b10669515730f2"
+    },
+    {
+      "path": "src/kicad_parts_manager/kicad/__init__.py",
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "src/kicad_parts_manager/kicad/export.py",
+      "sha256": "fb916d2edda473499ca84f7b12cb779dc533acf227a4957a2ffa9f79f85482df"
+    },
+    {
+      "path": "src/kicad_parts_manager/kicad/geometry.py",
+      "sha256": "592ff408f3ffa39f00221947e9932eb0cf5378a2ce8f9d47c10012f1f486fd18"
+    },
+    {
+      "path": "src/kicad_parts_manager/kicad/inventory.py",
+      "sha256": "62bc20df69e8bcfa1411048e6607b9c7c695382bbd9b9ffd67aea716abf8ed33"
+    },
+    {
+      "path": "src/kicad_parts_manager/kicad/previews.py",
+      "sha256": "291c55847eae6d4f595e30bb3b31b65c946d31ca4cb7211c8aed83e7ced37da9"
+    },
+    {
+      "path": "src/kicad_parts_manager/kicad/registration.py",
+      "sha256": "3fcc5df405b48cb2c4b86f067d1a6593b1322241ab37408ca94c4a5f88d27202"
+    },
+    {
+      "path": "src/kicad_parts_manager/kicad/selection_taxonomy.py",
+      "sha256": "6da9300bb17ed38af75acadf779aacbb50e2d3c9c8a7ffbace1da422ea7d4e8b"
+    },
+    {
+      "path": "src/kicad_parts_manager/kicad/taxonomy.py",
+      "sha256": "d9cb835c3aa3266566d99fb35c6007b0da3ff5546afb8ad684c6fb3d2d9edf7f"
+    },
+    {
+      "path": "src/kicad_parts_manager/kicad/transistor_taxonomy.py",
+      "sha256": "7aa074b1477bda48e5ca33e7c778c26bb529edddfe2944c6a833d946cde3f674"
+    },
+    {
+      "path": "src/kicad_parts_manager/library_import.py",
+      "sha256": "9eeaaa71de667148ff6657e9b02ef0d2851b5a3874c0551c61f846a9e78ad0d1"
+    },
+    {
+      "path": "src/kicad_parts_manager/manual_data.py",
+      "sha256": "80f4a63e14b505b7a6a3da54c66e6e061820c5aa48065eec7cb000fb15719833"
+    },
+    {
+      "path": "src/kicad_parts_manager/manufacturer_parameters.py",
+      "sha256": "0ae8e381ac34afa6ba3e851bbd95e38905a3c3e68f8a7034664105031f703059"
+    },
+    {
+      "path": "src/kicad_parts_manager/model_library.py",
+      "sha256": "1a41e9a9cde9f5a54ffd31209950074c3b5e7c1a02c65d51c5379bcde68c18f5"
+    },
+    {
+      "path": "src/kicad_parts_manager/name_parameters.py",
+      "sha256": "ff69e63ab0462e77b5c48b9f8ace86222786948a4046b2ea78ea18f280545c51"
+    },
+    {
+      "path": "src/kicad_parts_manager/name_rules.py",
+      "sha256": "a93fdd269cc5ee3abfcdb225a4f59a60d72b8a78155bc0ff526d810af2080bd4"
+    },
+    {
+      "path": "src/kicad_parts_manager/passive_description.py",
+      "sha256": "5c5e5c0fd3245109657866f7ac0e4ae70ed0b4bf9fd1ee1b9710a9b15b8c681f"
+    },
+    {
+      "path": "src/kicad_parts_manager/regulator_description.py",
+      "sha256": "9a9f841108d9615c8b523997e363efc2bcaf386e86138e97293f17becd8ca7fc"
+    },
+    {
+      "path": "src/kicad_parts_manager/search/__init__.py",
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "src/kicad_parts_manager/search/service.py",
+      "sha256": "1e22397f9cbd2cb280db47bc0b95fca0ba2a6a28d1785be414fcec7bfab763b6"
+    },
+    {
+      "path": "src/kicad_parts_manager/simulation_evidence.py",
+      "sha256": "22b0e0c7e6bae944cbb3d8bd4cea3f048dbd1d84f12f867b8aebd7f59db20845"
+    },
+    {
+      "path": "src/kicad_parts_manager/startup.py",
+      "sha256": "757ac086f5e49618603901b8a2d44358b7aac1875003ab1461bb541194d065cb"
+    },
+    {
+      "path": "src/kicad_parts_manager/statistics.py",
+      "sha256": "15d0cb1593b2369db33dcb9ac2c3bbb3222e3e170535177f049f53d8cf98074e"
+    },
+    {
+      "path": "src/kicad_parts_manager/transistor_opto_description.py",
+      "sha256": "ee591a208c455365ab86dcace825697a528cefba3f3b741ebca889da8d85d48b"
+    },
+    {
+      "path": "src/kicad_parts_manager/validation/__init__.py",
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "src/kicad_parts_manager/validation/pilot.py",
+      "sha256": "15f413995862fdd567f1a20419cf2bc63ec86c434a14f584073e229a17a3a3d2"
+    },
+    {
+      "path": "src/kicad_parts_manager/validation/review.py",
+      "sha256": "2d381c6e13c740a70c2eeeb38ce004ce85c82d52c83fdf9c97b425f8cddcdf16"
+    },
+    {
+      "path": "src/kicad_parts_manager/validation/runner.py",
+      "sha256": "d0a0c6e41b6b895c3bfb40f7e33b9a26118474de65bc42834144121131e1fe37"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/about-dialog.js",
+      "sha256": "7d46f95e2c289dd8503fdb327d60cad286d32e937a71baf9992836bae5125917"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/app.js",
+      "sha256": "f0900f34f428e50e5f4b8e575618780106eb50262064352008dff8c2bd2deb7e"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/catalog-utils.js",
+      "sha256": "f685df3a6a40e440acb6fb183565f27d2a1b4222cb214db2de63299ece66cfdd"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/category-dialog.js",
+      "sha256": "90307491ae6ed69f86e280410a9d7bea9a4d549a2f4e288dca8e00e6b6f9a907"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/context-help.js",
+      "sha256": "806bf30c0c36d9602049bccbd7d8a20ae62f5a4d17739f95dbd594a33cf14ad3"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/data-coverage.js",
+      "sha256": "141eb7c0954340b0a112837930bbb3be348b3b31c98b69aeea18216289a20ddb"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/design-tokens.css",
+      "sha256": "2507b4ad2c0d5ff6ed2eef2e6b6f191e6ac11cf15550acee262a7e746de60236"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/diode-panel.js",
+      "sha256": "5afa40ca78a55081f5c76734c15ae79564007cc29294f1eb6d2596b10995292f"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/first-run.css",
+      "sha256": "957d2ddc7e456e9244bc71808319bc124c607f96be454990e92ac0ef7dd98aab"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/first-run.js",
+      "sha256": "a45910e9f438f3e76aacf8ac63d56f217044acd036bc957c02d52337b7fb3152"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/home-background.png",
+      "sha256": "9702b1dfbeeee9b4e119cc1fa9466db367894b19a6d8c6298691eb11340bfd80"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/home.css",
+      "sha256": "11dea40fc5bb0f9e65f5a8374a864aa419d8796721af2ccf9f027177945ee3c6"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/home.html",
+      "sha256": "d8647c4469d726e726729f84dc9974f4091c93b37d6e9ab45ef9a2d1f510b671"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/home.js",
+      "sha256": "b3cb391953ed07842e36b99f58a9a141d3d44e96bb65850fd5bcba07df002e6e"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/i18n.js",
+      "sha256": "ff5b6a9ae195073c9022fee4a84f39de783f9cae45a09e785c71b0a843c06722"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/import.css",
+      "sha256": "d19716cf0882a3f6779f505efd2f4a3c1349b9f0a362264511e32e4681595f42"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/import.html",
+      "sha256": "e6be6963182e2881bfebd27f096421cb2a31a374604f3cf1f294ec33cbbf651d"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/import.js",
+      "sha256": "29ab852888cab73adf471274df75198228de390fd717ad41ba634dc06d117ca3"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/index.html",
+      "sha256": "3219a3209a5d837e0cfacd9bc736576d86618f3661c44cb49d3d530e10593a44"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/manual-editor.js",
+      "sha256": "f6b6e2aa5fc14ee03067242211f54a513e05c0159688aef18aacb20d6642b5fb"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/manufacturer-parameters.js",
+      "sha256": "a3448bb999bf5b72e1f720fab2e291678f0141a5c72bfcbb30d01bf7c41769f7"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/model-wizard.css",
+      "sha256": "401a960201a6f08592e78fc27accac03efb4d8f42d06a7a3701d98ba1296b661"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/model-wizard.js",
+      "sha256": "db61181b354ed14abbfb55e8b195988dec15f2ee2b8098617bce046fe8d36cc8"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/parameter-profiles.js",
+      "sha256": "0c24e8889317562db50b93bdb2c031b949480033e66240c28d71c722742c7fe4"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/search-profiles.js",
+      "sha256": "0b7450c1c7f17a06fffce8523e65adbe3e2607e099c42bf5e1971cce578d54c6"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/simulation-coverage.js",
+      "sha256": "9cc2fba7784bb346b98f9420377635d4d15a4fdf6abb63c26d06e0686ea2476c"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/startup.css",
+      "sha256": "58311faf2618336ed40d5b8e2583bb7c944a27034389cfd5b88249e799ad68ff"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/startup.html",
+      "sha256": "b6d8589cffaf42ee00a8b870f7e1ccbc3cd864ae54209b50f2b6dccdfc3175a6"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/startup.js",
+      "sha256": "8471b917c8e300cc8d287c33623c7173739167f5b3ef5dc95d16eecdba33acef"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/style.css",
+      "sha256": "7a22ef9f1aa3133583274bdfd68a54a0cf5770355e7acdc41de46fdc5544d783"
+    },
+    {
+      "path": "src/kicad_parts_manager/web/ui-texts.js",
+      "sha256": "ec35dc5e8286702c2c179e6f62ce1998b6a7f79cfee777bacc6a5386128e7c60"
+    },
+    {
+      "path": "tests/catalog-app.test.mjs",
+      "sha256": "8c17d104eb7cdd9cdc3d0517a8e1167ba77b2cdd763028b870685e263a1d5158"
+    },
+    {
+      "path": "tests/catalog-utils.test.mjs",
+      "sha256": "d7c96bbdb76fb14d9c8e3436762d87fdf490170e8947c489e93d6380d2cffc0e"
+    },
+    {
+      "path": "tests/component-import.test.mjs",
+      "sha256": "817ba213bca7aadf2a7b5bc257ed04131405ad2d2b4772204aea1ca4368f0b75"
+    },
+    {
+      "path": "tests/context-help.test.mjs",
+      "sha256": "b98d85fd5c05016d2c54812972d72b3059a11f3c46dd51072d688a05ac84d531"
+    },
+    {
+      "path": "tests/data-coverage.test.mjs",
+      "sha256": "094ce17ff089f7e0c3804374402af5aba9e940808e89649789474cb1b0c9b4b3"
+    },
+    {
+      "path": "tests/development-overview.test.mjs",
+      "sha256": "153305b4a7432dda05eabd02ff3cf5ae39a60b7e5928a8488c73151def15dfe8"
+    },
+    {
+      "path": "tests/donate-button.test.mjs",
+      "sha256": "12d491818f225912991dab1e0a46ccba18580f019072f1346f37b6b089b09ccf"
+    },
+    {
+      "path": "tests/editor-dialogs.test.mjs",
+      "sha256": "6b723d2fe6ef61bf07ac7b077c4d3fcb3a109c362b7cc99516482b501bc5b181"
+    },
+    {
+      "path": "tests/first-run.test.mjs",
+      "sha256": "1754e2e1c25292b56b34294cf6c7bc6f78451f3ddfe5d6b040f0a406b218cce2"
+    },
+    {
+      "path": "tests/home.test.mjs",
+      "sha256": "24dc8fd3df101d90db5b7f67a18922576c1b42343d71bd9d0a318ce36566735b"
+    },
+    {
+      "path": "tests/i18n.test.mjs",
+      "sha256": "6b8536f90b93bb5c57a7a4e5eb205df44b553e2cea2cea95889477a0a58b475a"
+    },
+    {
+      "path": "tests/light-theme.test.mjs",
+      "sha256": "e6dcdcf7ef967ad945a6bebbcae7c9763aa340cc7372dfa0b18e8b087249a7aa"
+    },
+    {
+      "path": "tests/quality-labels.test.mjs",
+      "sha256": "df7bba643f2ae39983b4626e263d42a6e1ab3ff51bd237f8e3d76bc45b9d4237"
+    },
+    {
+      "path": "tests/search-profiles.test.mjs",
+      "sha256": "f09d2e22cecc964f7499969cc21e134b09ab78b327285fee1801b9aecfdab1f2"
+    },
+    {
+      "path": "tests/short-search.test.mjs",
+      "sha256": "8718afdcabf0f9d01e742fd9ef398111d0c31819c38c8c56da52eac7ee6bb4bd"
+    },
+    {
+      "path": "tests/simulation-coverage.test.mjs",
+      "sha256": "748f61ca258f2a45df687273cb21f69bf64465248661a07e00d133c38ed711a0"
+    },
+    {
+      "path": "tests/support-dialog.test.mjs",
+      "sha256": "407a9bda10791c0901ade24641ece804a356a5b86facd83236b0f3dc6d227a9d"
+    },
+    {
+      "path": "tests/test_about.py",
+      "sha256": "be0b18e73fa8bcf055668fc66a1e7fa4c2a5ddbb83a45302ec4a336424f15a2d"
+    },
+    {
+      "path": "tests/test_api_errors.py",
+      "sha256": "89b20658bea76f138ed1aadb5ee1827e3083dc14f7d1aecb1899a468317a87b6"
+    },
+    {
+      "path": "tests/test_catalog.py",
+      "sha256": "b87e673781ee693960a289e5b0d4e2a801665017bfc6b90ee303110b8a3ad4e4"
+    },
+    {
+      "path": "tests/test_catalog_transport.py",
+      "sha256": "c6cf645d2137c161abeb0c302f67e1db6740456316b645a91007c27521c2b654"
+    },
+    {
+      "path": "tests/test_category_overrides.py",
+      "sha256": "a0b65b022e594e35d78fb0aabbf95de54043abb0e8a92ae281e4aa48451ddc29"
+    },
+    {
+      "path": "tests/test_cern_setup.py",
+      "sha256": "c8452a6493ab2165dd9b833363c907021ab0a72da25b0a982972a3dfc384bc28"
+    },
+    {
+      "path": "tests/test_common_description.py",
+      "sha256": "f88058de17dec13a765a07bf2bc551fc876bb9e8cd23256cf43c41c9d30c920d"
+    },
+    {
+      "path": "tests/test_component_import.py",
+      "sha256": "41488dc5e4f1c2ae4e02ef793fc9eb506d237d913494132313ed08578006a850"
+    },
+    {
+      "path": "tests/test_connector_description.py",
+      "sha256": "5044add7617dad17a0d80215bb51d652421b890fae791aff399dc8227b4ddb5f"
+    },
+    {
+      "path": "tests/test_contact_description.py",
+      "sha256": "bb44525a625616145e018169fbdb4cc10cd41ad14a5c5d30ed6f7b627e5117e7"
+    },
+    {
+      "path": "tests/test_core.py",
+      "sha256": "1509cd2c55e5cbd0c0cd4a6fa0cc0178a0f94d37b5262603ab74dd9a008e207a"
+    },
+    {
+      "path": "tests/test_diode_check.py",
+      "sha256": "2057d475b575a293653981c43b31b9313c38195407f7b7c9173895e5e9018eb7"
+    },
+    {
+      "path": "tests/test_diode_description.py",
+      "sha256": "0abee44a0915137562c0b1077068236772af71e23fb9193a01c30a757e5ed84f"
+    },
+    {
+      "path": "tests/test_first_run.py",
+      "sha256": "095ecea9bb5fe0f6beb9f2e1abbe2a49023f6de2292417d3cf22d36d4f659174"
+    },
+    {
+      "path": "tests/test_inventory.py",
+      "sha256": "f6ac4a3110699c3ea7803931ed08dd3ed281fb9cfd90569933307447de09e718"
+    },
+    {
+      "path": "tests/test_inventory_disk_cache.py",
+      "sha256": "f2b5d7624c08114415204857fc252f8c93210e061ed069176e5f134d398e542e"
+    },
+    {
+      "path": "tests/test_local_origin_security.py",
+      "sha256": "f849802341174f49d8bead38932aaec9b1d793878c2ea85889f64506c5996580"
+    },
+    {
+      "path": "tests/test_magnetic_taxonomy.py",
+      "sha256": "324662dcc28c17dcb8b95f3318db2a9430a051a9af115939f1292faa99727631"
+    },
+    {
+      "path": "tests/test_manual_data.py",
+      "sha256": "81a8bb2ad1708631d5bf1029ae3cae4fb0f8ade7afb022fca766c253bd0d6eed"
+    },
+    {
+      "path": "tests/test_model_library.py",
+      "sha256": "a0584001ba450afafd732fa3d286e8d6ebab585b7a2bbb90ae81d3f50e3932e2"
+    },
+    {
+      "path": "tests/test_name_compatibility.py",
+      "sha256": "36952c2baf9d7f3a16409bb95f387964aa511806beee68da9167ea694912e3e7"
+    },
+    {
+      "path": "tests/test_name_parameters.py",
+      "sha256": "b1bcadf00388da09343095c6b395c58499c982a1fdaae57620f73c0c902257e9"
+    },
+    {
+      "path": "tests/test_name_rules.py",
+      "sha256": "b6603f8960b3aeeff348f63d32f71760492d2bed66a8827ca3b6d28e1ee76740"
+    },
+    {
+      "path": "tests/test_passive_description.py",
+      "sha256": "1da1ed6683219a875a5c67cbba69669cd724a0264e8f6b792414cf9bd7510fe8"
+    },
+    {
+      "path": "tests/test_passive_taxonomy.py",
+      "sha256": "9bf759ad9b7cce7ca7cdbc49c8099513b3ac8987bd117dc09dea6ca4223adb75"
+    },
+    {
+      "path": "tests/test_progress.py",
+      "sha256": "3bf4ba6fc2742e078340850a8e5d2c5f1d370e7e1e00c2e9e9e1fea9bda85cee"
+    },
+    {
+      "path": "tests/test_public_preview.py",
+      "sha256": "92289ad26f543d6422fd4eb8662e11709d20dcde2a49196c6e855f9ccd54c182"
+    },
+    {
+      "path": "tests/test_registration.py",
+      "sha256": "5b081e7e65bac9e83ecda1b8cd0018cce138463b9603db90a1934f352ca42ccc"
+    },
+    {
+      "path": "tests/test_regulator_description.py",
+      "sha256": "fccb4e379958de644bbca20bd388f5d255e91c0d4bbc617aee9393201b0d3900"
+    },
+    {
+      "path": "tests/test_reimport_category.py",
+      "sha256": "cf947806d6cd702121b323bd7eec633272945d739ff7b350319e44eed95e0ca1"
+    },
+    {
+      "path": "tests/test_selection_taxonomy.py",
+      "sha256": "db63e4195ef0d4f81328ad6117e3dccd681d711ac15eb51b140840aa20fb62b2"
+    },
+    {
+      "path": "tests/test_simulation_evidence.py",
+      "sha256": "3eb09a3f14c66abbfa257ac69c300846ed02c026c05e5d8c1894034bdf0eb346"
+    },
+    {
+      "path": "tests/test_startup.py",
+      "sha256": "80a967e776d75ba19120e127d2ae7555beab2e5b0ae1f845a68c2f114aceefcd"
+    },
+    {
+      "path": "tests/test_statistics.py",
+      "sha256": "70fcd39191f6246581927e52793ef37c29e71a4a383655812920391a6c20e240"
+    },
+    {
+      "path": "tests/test_symbol_snapshot.py",
+      "sha256": "d05b147a8304cb26713a2bdc17bc10a2e35156a0262df051929df5afa3f64859"
+    },
+    {
+      "path": "tests/test_transistor_opto_description.py",
+      "sha256": "df0f1166f5fdc550d1caaab753ffcf24dbea46f900e18e40405eff33a1f2ec5e"
+    },
+    {
+      "path": "tests/test_transistor_taxonomy.py",
+      "sha256": "3d582864d53295d7b3022c1fb696626cc0a2f15b3d96b1d571c32d8e30671975"
+    },
+    {
+      "path": "tests/test_uninstall.py",
+      "sha256": "d870243cde7c94f99f7f7457658ca29c72cf4db77cff29f2f0d6d0cb865eee68"
+    },
+    {
+      "path": "tests/test_validation.py",
+      "sha256": "90da0627e371b5814b3a38f3fe5ef3d1e63602d09d87c66b71646d69724fdad9"
+    },
+    {
+      "path": "tests/value-information.test.mjs",
+      "sha256": "8f9eb0bfd9ac1ede2325f06c1be7a8094cb9a96c1d3556ddedf31380c304af2b"
+    },
+    {
+      "path": "tools/build_public_preview.py",
+      "sha256": "a8257ae2cb8b62f3a2389529240d1a738a797cc313bf777990dcbd0a4fd5bd2b"
+    },
+    {
+      "path": "tools/desktop_shortcut.ps1",
+      "sha256": "762c45496abe710489adf40b718205f6412d0a2c4e43886e9cc4bb0501860a26"
+    },
+    {
+      "path": "tools/enrich_contact_descriptions.py",
+      "sha256": "314df9d4909ef5aa90f6bba5a4f003bfb8e0bd7c71199e4764339b6aaef6dc1c"
+    },
+    {
+      "path": "tools/enrich_manufacturer_name_rules.py",
+      "sha256": "49ace7a2fffd460332aee3aa4be3ea1043b055dc99b74ae44d4d1a4dfbad3fc7"
+    },
+    {
+      "path": "tools/enrich_name_parameters.py",
+      "sha256": "1c674aa58817956ae30b8a1b2c8b3c277289f7c0a9e3d2ae284c1e15693d7f8e"
+    },
+    {
+      "path": "tools/import_library.py",
+      "sha256": "f82c079119940080e44cca704d3bb76e3ce4ec00d65b9cfa54aceac3b6457a2a"
+    },
+    {
+      "path": "tools/portable_setup.py",
+      "sha256": "3f89a5101b1a83e59b9e5669cd4755e0e787f73275e060f1a022eef75a73f6ea"
+    },
+    {
+      "path": "tools/public_setup.py",
+      "sha256": "1a6a235a75fa4a5a080cbb95085533c930035d8f418b0800a532f098ee35a9a0"
+    },
+    {
+      "path": "tools/register_catalog_libraries.py",
+      "sha256": "f57793b9ee9593afc8f8d21cc894b2542036c988470b7767be8ce0905b3e8a8f"
+    },
+    {
+      "path": "tools/setup_cern_kicad.py",
+      "sha256": "f965b954ac21680eb4226c66c601854af888cce6a5d1b483d28fdfa5deabb8c1"
+    },
+    {
+      "path": "tools/uninstall.ps1",
+      "sha256": "d68c89b764aa18818683606e39cf96e159aa5625964ce9e8c7d9b1bceef7c677"
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "meta": {
+    "version": 0
+  },
+  "name": "kicad-parts-manager",
+  "description": "Verified kicad-parts-manager projections",
+  "source": {
+    "type": "odbc",
+    "dsn": "kicad-parts-manager-preview",
+    "timeout_seconds": 5
+  },
+  "libraries": [
+    {
+      "name": "diode",
+      "table": "kicad_diode",
+      "key": "id",
+      "symbols": "symbol",
+      "footprints": "footprint",
+      "fields": [
+        {
+          "column": "mpn",
+          "name": "Value",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "manufacturer",
+          "name": "Manufacturer",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "description",
+          "name": "Description",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_library",
+          "name": "Sim.Library",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_name",
+          "name": "Sim.Name",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_pins",
+          "name": "Sim.Pins",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_params",
+          "name": "Sim.Params",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_device",
+          "name": "Sim.Device",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false
+        },
+        {
+          "column": "sim_type",
+          "name": "Sim.Type",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false
+        }
+      ]
+    },
+    {
+      "name": "mosfet",
+      "table": "kicad_mosfet",
+      "key": "id",
+      "symbols": "symbol",
+      "footprints": "footprint",
+      "fields": [
+        {
+          "column": "mpn",
+          "name": "Value",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "manufacturer",
+          "name": "Manufacturer",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "description",
+          "name": "Description",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_library",
+          "name": "Sim.Library",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_name",
+          "name": "Sim.Name",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_pins",
+          "name": "Sim.Pins",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_params",
+          "name": "Sim.Params",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_device",
+          "name": "Sim.Device",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false
+        },
+        {
+          "column": "sim_type",
+          "name": "Sim.Type",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false
+        }
+      ]
+    },
+    {
+      "name": "bjt",
+      "table": "kicad_bjt",
+      "key": "id",
+      "symbols": "symbol",
+      "footprints": "footprint",
+      "fields": [
+        {
+          "column": "mpn",
+          "name": "Value",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "manufacturer",
+          "name": "Manufacturer",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "description",
+          "name": "Description",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_library",
+          "name": "Sim.Library",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_name",
+          "name": "Sim.Name",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_pins",
+          "name": "Sim.Pins",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_params",
+          "name": "Sim.Params",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_device",
+          "name": "Sim.Device",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false
+        },
+        {
+          "column": "sim_type",
+          "name": "Sim.Type",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false
+        }
+      ]
+    },
+    {
+      "name": "passive",
+      "table": "kicad_passive",
+      "key": "id",
+      "symbols": "symbol",
+      "footprints": "footprint",
+      "fields": [
+        {
+          "column": "mpn",
+          "name": "Value",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "manufacturer",
+          "name": "Manufacturer",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "description",
+          "name": "Description",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_library",
+          "name": "Sim.Library",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_name",
+          "name": "Sim.Name",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_pins",
+          "name": "Sim.Pins",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_params",
+          "name": "Sim.Params",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false
+        },
+        {
+          "column": "sim_device",
+          "name": "Sim.Device",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false
+        },
+        {
+          "column": "sim_type",
+          "name": "Sim.Type",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "kicad-parts-manager"
+version = "0.1.0"
+description = "Local KiCad component selection by electrical parameters with SPICE model assignment"
+readme = "README.md"
+license = "GPL-3.0-only"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+requires-python = ">=3.11"
+dependencies = ["SQLAlchemy>=2.0,<3", "alembic>=1.14,<2", "pydantic>=2.10,<3"]
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+[project.scripts]
+kicad-parts-manager = "kicad_parts_manager.cli:main"
+kicad-parts-manager-browser = "kicad_parts_manager.browser:main"
+[tool.setuptools.package-data]
+kicad_parts_manager = ["web/*.html", "web/*.css", "web/*.js", "web/*.png", "data/*.json"]
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]

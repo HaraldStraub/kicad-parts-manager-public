@@ -1,0 +1,2 @@
+* Self-authored CC0-1.0 illustrative reference
+.model REFD D(IS=1e-8 N=1.05 RS=0.1 BV=40)

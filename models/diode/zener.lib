@@ -1,0 +1,2 @@
+* Self-authored CC0-1.0 illustrative reference
+.model REFD D(IS=1e-12 N=1 BV=5.1 IBV=1e-3)
